@@ -458,28 +458,76 @@
             </li>
           </ul>
         </div>
+        <div>
+          <p>Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-email">
+              <input />
+            </label>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
+        <button class="modal-close">
+          <a href=" " target="_parent">
+            <svg class="close-form-btn" height="8px" width="8ps">
+              <use href="./images/icons.svg#icon-closex"></use>
+            </svg>
+          </a>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form>
-          <label for="username">
-            Name
-            <input type="text" name="username" id="username" />
-          </label>
-          <label for="tel">
-            Phone
-            <input type="text" name="tel" id="tel" />
-          </label>
-          <label for="email">
-            Email
-            <input type="text" name="email" id="email" />
-          </label>
-          <label for="comment">
-            Comment
-            <input type="text" name="comment" id="comment" />
-          </label>
-          <button type="submit">Send</button>
+          <div>
+            <label class="form-label" for="username">
+              Name
+              <input
+                class="form-input"
+                type="text"
+                name="username"
+                id="username"
+              />
+            </label>
+          </div>
+          <div>
+            <label class="form-label" for="tel">
+              Phone
+              <input class="form-input" type="text" name="tel" id="tel" />
+            </label>
+          </div>
+          <div>
+            <label class="form-label" type="email">
+              Email
+              <input class="form-input" type="text" name="email" id="email" />
+            </label>
+          </div>
+          <div>
+            <label class="form-label" for="comment">
+              Comment
+              <textarea
+                class="form-input"
+                name="comment"
+                rows="4"
+                placeholder="text input"
+              >
+              </textarea>
+            </label>
+          </div>
+          <div>
+            <label class="form-label">
+              <input
+                class="form-input"
+                type="checkbox"
+                name="policy"
+                value="policy"
+              />
+              I accept the terms and conditions of the
+              <span class="policy-span">Privacy Policy</span>
+            </label>
+          </div>
+          <button class="button" type="submit">Send</button>
         </form>
       </div>
     </div>
