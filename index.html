@@ -461,12 +461,12 @@
         <div class="footer-email-form">
           <p class="social-media">Subscribe</p>
           <form class="footer-form">
-            <label for="email" class="footer-email">
+            <label for="e-mail" class="footer-email">
               <input
                 class="footer-input"
                 type="email"
-                name="email"
-                id="email"
+                name="e-mail"
+                id="e-mail"
                 placeholder="E-mail"
               />
             </label>
@@ -480,7 +480,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button class="modal-close">
           <svg class="close-form-btn" height="8px" width="8px">
@@ -513,7 +513,7 @@
             </div>
           </div>
           <div class="modal-form">
-            <label class="form-label" type="email"> Email </label>
+            <label for="email" class="form-label" type="email"> Email </label>
             <div class="modal-form-input">
               <input class="form-input" type="email" name="email" id="email" />
               <svg class="modal-form-icon" height="24px" width="18px">
@@ -538,6 +538,7 @@
               class="form-input-checkbox visually-hidden"
               type="checkbox"
               name="policy"
+              id="policy"
               value="true"
             />
             <label class="form-label-check-text" for="policy">
@@ -546,8 +547,8 @@
                   <use href="./images/icons.svg#icon-agree"></use>
                 </svg>
               </span>
-              "I accept the terms and conditions of the "
-              <a href=" " class=""> Privacy Policy</a>
+              I accept the terms and conditions of the
+              <a href=" " class="policy-link"> Privacy Policy</a>
             </label>
           </div>
           <button class="modal-button" type="submit">Send</button>
